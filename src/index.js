@@ -49,12 +49,12 @@ root.render(
   <BrowserRouter>
     <Provider store={store}>
       <Suspense fallback={<Spinner />}>
-        <AbilityContext.Provider value={ability}>
+       
           <ThemeContext>
             <LazyApp />
             <Toaster position={themeConfig.layout.toastPosition} toastOptions={{ className: 'react-hot-toast' }} />
           </ThemeContext>
-        </AbilityContext.Provider>
+        
       </Suspense>
     </Provider>
   </BrowserRouter>
